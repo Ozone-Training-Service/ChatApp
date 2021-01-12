@@ -17,7 +17,7 @@ export class ChatService {
   }
 
   sendMessage(message: Message) {
-    this._hubConnection.invoke('NewMessage', message);
+    this._hubConnection.invoke('NewMessage', message,null);
   }
 
   private createConnection() {
