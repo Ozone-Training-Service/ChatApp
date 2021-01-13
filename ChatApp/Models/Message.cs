@@ -7,10 +7,11 @@ namespace ChatApp.Models
 {
     public class Message
     {
-
+     
+        public string Id { get; set; }
         public string clientuniqueid { get; set; }
         public string type { get; set; }
         public string message { get; set; }
-        public DateTime date { get; set; }
+        public string date { get; set; }
     }
 }

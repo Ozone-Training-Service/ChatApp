@@ -11,7 +11,8 @@ namespace ChatApp2.Models
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         { }
         public DbSet<ChatApp.Models.Message> Message { get; set; }
+        public DbSet<ChatApp.Models.Message2> Message2 { get; set; }
 
-        
+
     }
 }
